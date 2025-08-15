@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @JonasTheProducer
+- 👋 Hi, I’m @DigitalCowboy
 - 👀 I’m interested in Music and Video Games
 - 🌱 I’m currently learning Electronics
 - 💞️ I’m looking to collaborate on ...
