@@ -7,7 +7,7 @@ uc: STM32 G071RBT6
 Création		: -
 Révision		: -
 
-Description:Fonctions de Gestion du bus UART
+Description  :
 --------------------------------------------------------------------------*/
 #ifndef _PROTOTYPE_H_
 #define _PROTOTYPE_H_
