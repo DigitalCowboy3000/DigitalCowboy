@@ -7,7 +7,7 @@ Yverdon-les-bains
 uc: STM32 G071RBT6
 
 Création		: 29.01.26
-Révision		: -
+Révision		: 29.01.26
 
 Description  :  
 --------------------------------------------------------------------------*/	
@@ -15,14 +15,13 @@ Description  :
 #include "ssd1306.h"
 #include "ssd1306_tests.h"
 #include "ssd1306_fonts.h"
-#include "stm32g0xx_hal.h"
 
 
 // Equivalences
 
 // Variables globales
 
-void ssd1306_start_fill_cube(void);
+void ssd1306_start_fill_cube(void)
 /*------------------------------------------------------------------------
 Fonction  :
 Description  :
@@ -48,7 +47,7 @@ Sorties  :  -
   }
 }
 
-void ssd1306_start_contrast_waiting(void);
+void ssd1306_start_contrast_waiting(void)
 /*------------------------------------------------------------------------
 Fonction  :
 Description  :
@@ -57,7 +56,8 @@ Sorties  :  -
 --------------------------------------------------------------------------*/
 {
   unsigned char contrast, i;
-  
+  ssd1306_Fill(White);
+  ssd1306_UpdateScreen();
   for(i = 0; i < 5; i++)
   {
 	  for( contrast = 0x81; contrast > 0; contrast-- )
@@ -71,5 +71,6 @@ Sorties  :  -
 		  ssd1306_SetContrast(contrast);
 		  HAL_Delay(5);
 	  }
+	  ssd1306_UpdateScreen();
   }
 }
