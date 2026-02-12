@@ -1,15 +1,15 @@
 /*------------------------------------------------------------------------
-Prototype
-Prototype.c
-Jonas Dubey 
-Yverdon-les-bains
+Titre : Prototype
+Source : Prototype.c
+Auteur : Jonas Dubey 
+Lieu : Yverdon-les-bains
 
 uc: STM32 G071RBT6
 
-Création		: -
-Révision		: -
+Création : -
+Révision : -
 
-Description  :  
+Description :  
 --------------------------------------------------------------------------*/	
 #include "Prototype.h"
 
